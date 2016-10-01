@@ -1,0 +1,17 @@
+<ul class="comp-pagination pagination">
+    <li class="pages first-page" ng-if="model.first_page.page">
+        <a ui-sref-active="active" ui-sref="{{path}}({{model.first_page}})">
+            {{model.first_page.page}}
+        </a>        
+    </li>
+    <li ui-sref-active="active" ng-repeat="page in model.pages track by $index" class="pages">
+        <a ui-sref="{{path}}({{page}})">
+            {{page.page}}
+        </a>
+    </li>
+    <li ui-sref-active="active" class="pages last-page" ng-if="model.last_page.page">
+        <a ui-sref="{{path}}({{model.last_page}})">
+            {{model.last_page.page}}
+        </a>        
+    </li>
+</ul>

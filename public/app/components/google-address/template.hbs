@@ -1,0 +1,35 @@
+<form class="form" ng-submit="actions.get_location();" class="google-address">
+    <div class="input-group">
+        <div class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="actions.get_location();">
+                Search
+            </button>
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li ng-click="actions.set_geo_location();">
+                    <a>
+                        Use browser location
+                    </a>
+                </li>
+                <li ng-click="actions.use_profile_location();">
+                    <a>
+                        Use profile location
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="btn-group btn-block" ng-class="{'open' : model.suggestions.length > 0}">
+            <input type="text" class="form-control" ng-keypress="actions.get_suggestions();" ng-model="model.address" placeholder="Search your address">
+            <ul class="dropdown-menu open">
+                <li ng-click="actions.use_suggestion(suggestion);" ng-repeat="suggestion in model.suggestions track by $index">
+                    <a>
+                        {{suggestion.address}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</form>

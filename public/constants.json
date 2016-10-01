@@ -1,0 +1,26 @@
+{
+    "development": {
+        "ENV": {
+            "title": "Development - PlaceIt",
+            "host": "api",
+            "maps_key": "",
+            "version": {
+                "major": 0,
+                "minor": 1,
+                "patch": 0
+            }
+        }
+    },
+    "production": {
+        "ENV": {
+            "title": "PlaceIt",
+            "host": "api",
+            "maps_key": "",
+            "version": {
+                "major": 0,
+                "minor": 1,
+                "patch": 0
+            }
+        }
+    }
+}

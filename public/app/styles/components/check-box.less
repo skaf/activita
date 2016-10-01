@@ -1,0 +1,20 @@
+.check-box {
+    .none-select();
+    display: block;
+    outline: none;
+    cursor: pointer;
+    display: table;
+    &:focus {
+        outline: none;
+        border-bottom: solid 1px #66afe9;
+        border-radius: 4px;
+    }
+    &-icon {
+        width: 14px;
+        cursor: inherit;
+    }
+    &-label {
+        padding-left: 5px;
+        cursor: inherit;
+    }
+}

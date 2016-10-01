@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+    background-color: #f9f9f9;
+}
+
+body > .ng-scope {
+    min-height: 100%;
+    height: 100%;
+    .page {
+    	position: relative;
+        min-height: 100%;
+        height: 100%;
+        height: auto !important;
+        margin: -80px auto -55px;
+        /* Ensures that navigation bar and footer is considered in height 100%*/
+        padding: 80px 0px 55px 0px;
+        @import "./about.less";
+        @import "./index.less";
+        @import "./contact.less";
+        @import "./404.less";
+    }
+}

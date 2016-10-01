@@ -1,0 +1,28 @@
+<div class="comp-menu-slide">
+	<div ng-click="toggle_display()" class="comp-menu-slide-title">
+		<i class="fa fa-caret-down" aria-hidden="true" ng-if="slide_down"></i>
+		<i class="fa fa-caret-up" aria-hidden="true" ng-if="!slide_down"></i>
+		<b>{{title}}</b>
+	</div>
+	<div class="comp-menu-slide-elements">
+		<div class="comp-menu-slide-elements-all">
+			<div ng-click="all(true)">
+				Select All
+			</div>
+			<div ng-click="all(false)">
+				Deselect All
+			</div>
+		</div>
+		<div class="comp-menu-slide-elements-options">
+			<div title="{{option.name}} ({{option.count}})" class="comp-menu-slide-elements-options-option" ng-click="toggle_bool(option)" ng-repeat="option in options track by $index">
+				<i class="fa fa-square-o" aria-hidden="true" ng-if="!option.bool"></i>
+				<i class="fa fa-check-circle-o" aria-hidden="true" ng-if="option.bool"></i>
+				<span>
+					{{option.name}}
+				</span>
+				<span>
+					({{option.count}})
+				</span>
+		</div>
+	</div>
+</div>

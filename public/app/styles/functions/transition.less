@@ -1,0 +1,26 @@
+.transition-property(@property) {
+    transition-property: @property;
+    -o-transition-property: @property;
+    -moz-transition-property: @property;
+    -webkit-transition-property: @property;
+}
+
+.transition-duration(@value) {
+    transition-duration: @value;
+    -o-transition-duration: @value;
+    -moz-transition-duration: @value;
+    -webkit-transition-duration: @value;
+}
+
+.transition-timing-function(@pvalue) {
+    transition-timing-function: @pvalue;
+    -o-transition-timing-function: @pvalue;
+    -moz-transition-timing-function: @pvalue;
+    -webkit-transition-timing-function: @pvalue;
+}
+
+.transition(@property, @time) {
+    -webkit-transition: @property @time;
+    -moz-transition: @property @time;
+    -o-transition: @property @time;
+}

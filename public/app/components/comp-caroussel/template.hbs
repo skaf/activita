@@ -1,0 +1,21 @@
+<div class="comp-caroussel">
+	<div class="comp-caroussel-wrapper">
+		<div class="comp-caroussel-wrapper-left" ng-click="previous()">
+			<i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+		</div>
+		<div class="comp-caroussel-wrapper-elements">
+			<div class="comp-caroussel-wrapper-elements-wrapper">
+				
+			</div>
+		</div>
+		<div class="comp-caroussel-wrapper-right" ng-click="next()">
+			<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+		</div>
+	</div>
+	<div class="comp-caroussel-indicators">
+		<div class="comp-caroussel-indicators-wrapper">
+			<div class="comp-caroussel-indicators-wrapper-indicator" ng-repeat="element in elements track by $index" ng-class="{'active': $index === current}" ng-click="slide($index)"></div>
+		</div>
+	</div>
+	<ng-transclude />
+</div>

@@ -1,0 +1,70 @@
+.comp-navbar {
+    position: relative;
+    background-color: inherit;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0px;
+    z-index: 1000;
+    color: white;
+    white-space: nowrap;
+    height: 80px;
+
+    img {
+        margin-top: 2em;
+        height: 35px;
+    }
+    .pull-left {
+        position: relative;
+        top: 10px;
+        a {
+            text-decoration: none;
+            .logo, .title {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .logo {
+                height: 60px;
+            }
+            .title {
+                font-size: 36px;
+            }
+        }
+    }
+    .pull-right {
+        li {
+            position: relative;
+            top: 30px;
+            background-color: #294661;
+            height: 40px;
+            display: inline;
+            padding: 10px 30px 10px 15px;
+            margin-left: -20px;
+            a {
+                color: white;
+            }
+            &.active {
+                a {
+                    color: #337ab7;
+                }
+            }
+            &:first-child {
+                margin-left: 0px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+            &:last-child {
+                background-color: #3E6083;
+                border-radius: 20px;
+                a, .fa-lock {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .fa-lock {
+                    width: 20px;
+                    height: 20px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

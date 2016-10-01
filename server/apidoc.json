@@ -1,0 +1,11 @@
+{
+    "name": "PlaceIt",
+    "version": "0.2.0",
+    "description": "PlaceIt",
+    "title": "PlaceIt API",
+    "url": "http://www.wordbolt.dk/api",
+    "template": {
+        "withCompare": true,
+        "withGenerator": true
+    }
+}
